@@ -15,7 +15,7 @@ public class UserDataResponse {
     private CurrentUvData currentUvData;
     private List<UvIdxTimeData> forecast;
     private List<UvIdxTimeData> pastWeek;
-    private String recOutdoor;
+    private Integer recOutdoor;
     private String advice;
-    private String factor;
+    private Integer factor;
 }

@@ -7,7 +7,7 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 public class AdvisorServiceResponse {
-    private String recOutdoor;
+    private Integer recOutdoor;
     private String advice;
-    private String factor;
+    private Integer factor;
 }

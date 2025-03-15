@@ -24,7 +24,7 @@ public class UserServiceImpl implements UserService {
 
     UserServiceImpl(UserRepository userRepository) {
         this.userRepository = userRepository;
-        this.advisorServiceDataUrl = "http://localhost:9091/advice";
+        this.advisorServiceDataUrl = "http://localhost:9093/advice";
         this.uvServiceDataUrl = "http://localhost:9090/uv";
     }
 
