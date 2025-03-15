@@ -5,6 +5,7 @@ import com.fmicodesproj.fmiprojuserservice.entity.User;
 import com.fmicodesproj.fmiprojuserservice.mapper.UserMapper;
 import com.fmicodesproj.fmiprojuserservice.repository.UserRepository;
 import com.fmicodesproj.fmiprojuserservice.service.UserService;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
@@ -19,13 +20,14 @@ import java.util.List;
 @Service
 public class UserServiceImpl implements UserService {
     private final UserRepository userRepository;
-    private final String advisorServiceDataUrl;
-    private final String uvServiceDataUrl;
 
+    @Value("${advisor.service.url}")
+    private String advisorServiceDataUrl;
+
+    @Value("${uv.service.url}")
+    private String uvServiceDataUrl;
     UserServiceImpl(UserRepository userRepository) {
         this.userRepository = userRepository;
-        this.advisorServiceDataUrl = "http://localhost:9093/advice";
-        this.uvServiceDataUrl = "http://localhost:9090/uv";
     }
 
     @Override
