@@ -1,5 +1,12 @@
 package com.fmicodesproj.fmiprojuserservice.domain;
 
 public enum SkinDisease {
-    CANCER
+    ATOPIC_DERMATITIS,
+    PSORIASIS,
+    ACNE,
+    VITILIGO,
+    ROSACEA,
+    ECZEMA,
+    LUPUS,
+    MELASMA,
 }
