@@ -7,7 +7,7 @@ import java.util.List;
 
 @Data
 @AllArgsConstructor
-public class UserDTO {
+public class UserCreateRequest {
     private BiologicalSex biologicalSex;
     private Short years;
     private SkinType skinType;

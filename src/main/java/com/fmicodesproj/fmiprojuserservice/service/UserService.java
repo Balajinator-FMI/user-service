@@ -1,15 +1,12 @@
 package com.fmicodesproj.fmiprojuserservice.service;
 
-import com.fmicodesproj.fmiprojuserservice.domain.SkinDisease;
-import com.fmicodesproj.fmiprojuserservice.domain.SkinType;
-import com.fmicodesproj.fmiprojuserservice.domain.UserDTO;
-import com.fmicodesproj.fmiprojuserservice.domain.UserIDResponse;
+import com.fmicodesproj.fmiprojuserservice.domain.*;
 
 import java.util.List;
 
 public interface UserService {
-    UserIDResponse createUser(UserDTO userDTO);
-    UserDTO getUserDataById(String id);
+    UserIDResponse createUser(UserCreateRequest userCreateRequest);
+    UserDataResponse getUserDataById(String id, Double lat, Double lon);
     List<SkinType> getAllSkinTypes();
-    List<SkinDisease> getAllSkinDeseases();
+    List<SkinDisease> getAllSkinDiseases();
 }
