@@ -14,4 +14,5 @@ public class AdvisorServiceRequest {
     private List<SkinDisease> skinDiseases;
     private Double uvIndex;
     private Double temperatureC;
+    private String weather;
 }

@@ -51,6 +51,7 @@ public class UserServiceImpl implements UserService {
                 .skinType(user.getSkinType())
                 .uvIndex(uvDataResponse.getCurrentUvData().getUvIndex())
                 .temperatureC(uvDataResponse.getCurrentUvData().getTemperatureC())
+                .weather(uvDataResponse.getCurrentUvData().getWeather())
                 .build();
 
         AdvisorServiceResponse advisorServiceResponse = getAdvisorServiceData(request);
